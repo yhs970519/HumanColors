@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Color</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="color.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
+  <script src="../jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="../p5.min.js"></script>
+  <script src="color.js"></script>
+  <script src="ColorBox.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+    </header>
+    <div class="content" id="main">
+      <nav>
+      </nav>
+      <main>
+        <div id="bar"></div>
+        <a href=""><div id="title">Human colors</div></a>
+        <div id="subtitle">あなたはいつ人を感じますか?</div>
+        <div id="modoru">● 利用後はタイトルをクリックし、最初の画面に戻ってください。</div>
+        <div id="anata" class="eranda">あなたが選んだ<br>人の色</div>
+        <div id="hoka" class="eranda">他の人が選んだ<br>人の色</div>
+        <div id="menu">Category</div>
+        <div id="choice">
+          <div id="age" class="ageSex">
+            <span class="noClick">年齢</span>
+            <span id="a10" class="click">10</span>
+            <span id="a20" class="click">20</span>
+            <span id="a30" class="click">30</span>
+            <span id="a40" class="click">40</span>
+            <span id="a50" class="click">50</span>
+            <span id="a60" class="click">60</span>
+          </div>
+          <div id="sex" class="ageSex">
+            <span class="noClick">性別</span>
+            <span id="Male" class="click">Male</span>
+            <span id="Female" class="click">Female</span>
+            <span id="Others" class="click">Others</span>
+          </div>
+          <div id="toukei" class="ageSex">
+            <span id="tk" class="click">統計</span>
+          </div>
+        </div>
+        <div id="toukei-color-panel">
+          <div id="toukei-text">今までの測定で「人を感じる色」として選ばれた色の中で、最も多くの人が選んだ上位100色です。</div>
+          <ul id="toukei-colors">
+          </ul>
+        </div>
+        <div id="forms">
+          あなたの年齢は?
+          <form id="enquete-age" class="enquete">
+            <fieldset>
+              <input type="radio" value="10" name="age" checked>10
+              <input type="radio" value="20" name="age">20
+              <input type="radio" value="30" name="age">30
+              <input type="radio" value="40" name="age">40
+              <input type="radio" value="50" name="age">50
+              <input type="radio" value="60" name="age">60
+            </fieldset>
+          </form>
+          あなたの性別は?
+          <form id="enquete-sex" class="enquete">
+            <fieldset>
+              <input type="radio" value="male" name="sex" checked>Male
+              <input type="radio" value="female" name="sex">Female
+              <input type="radio" value="others" name="sex">Others
+            </fieldset>
+          </form>
+          <div id="annai">
+            これから「人の色」を測定していただきます。<br>
+            あなたが「人」感じる間にマウスをクリックしたままにしてください。<br>
+            「人」を感じない間はクリックを外してください。
+          </div>
+          <button id="next">START</button>
+          <div id="sanko">
+            ● STARTを押したらすぐ始まります。 <br>
+            ● 測定には5分ほどの時間が掛かります。
+          </div>
+        </div>
+      </main>
+      <aside>
+      </aside>
+    </div>
+    <footer>
+    </footer>
+  </div>
+</body>
+</html>
